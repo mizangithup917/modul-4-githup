@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+
+#nav_menu{
+    background-color: #023364;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+   
+    
+}
+
+
+.logo >img{
+    width: 150px;
+    margin: 0 100px;
+           
+}
+
+#nav_menu >ul{
+    display: flex;
+    margin: 80px;
+}
+
+#nav_menu >ul >li{
+    list-style: none;
+    margin: 0 20px;
+    padding: 15 0px;
+}
+
+#nav_menu >ul >li >a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    /* padding: 15px 10px; */
+}
+#nav_menu >ul >li >a >samp{
+  background-color:#ffa600;
+  color: #023364;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 2px;
+}
+
+#nav_menu >ul >li >a >samp:hover{
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+#nav_menu >ul >li >a:hover{
+    color: #FDAF1E;
+    transition: 0.5s ; 
+}
+
+.droop_menu{
+    position: absolute;
+    margin-top: 18px;
+    list-style: none;
+    width: 210px;
+    text-align: center;
+    margin-left: -76px;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: scaleY(0);
+    transform-origin: top center;
+     z-index: 4;
+}
+
+.droop_menu >li{
+    background-color: #023e7a;
+    padding: 12px 0;
+    
+}
+
+.droop_menu >li >a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.droop_menu >li:hover{
+    background-color: #FDAF1E;
+    transition: 0.5s;
+}
+
+.droop_menu >li >a:hover{
+        color: #023e7a;
+        transition: 0.3s;
+}
+
+#nav_menu >ul >li:hover .droop_menu{
+    /* display: block; */
+    visibility: visible;
+    transform: scaleY(1);
+    opacity: 1;
+    transition: 0.6s;
+}
+
+/* Hero area */
+
+.hero_area{
+    background-color: #012243;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    
+}
+
+.grdient{
+    width: 50%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    /* border-radius: 50%; */
+    background-color:#0122433a;
+    z-index: 1;
+    filter:blur(50%);
+}
+
+.text_title{
+    margin:0 120px;
+    margin-right: 50px;
+    /* border: #FDAF1E solid 2px; */
+    z-index: 2;
+}
+
+.text_title >h4{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.text_title >h2{
+    color: #FDAF1E;
+    font-size: 50px;
+}
+
+.text_title >h5{
+    color: white;
+    margin: 20px 0;
+}
+
+.text_title >h5 >samp{
+    color: #FDAF1E;
+    font-size: 18px;
+}
+
+.text_title >p{
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.text_title >button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    background-color: #FDAF1E;
+    font-weight: bold;
+    color: #012243;
+    cursor: pointer;
+    transition: 0.5s ease;
+   
+    
+}
+
+.text_title >button:hover{
+   background-color: #ffa600;
+   box-shadow: 0 0 8px #ffffffeb;
+}
+
+.hero_img{
+    /* border: #FDAF1E solid 2px; */
+    margin-right: 100px;
+}
+
+
+/* about me section */
+.about_me{
+    background-color: #023364;
+    display: flex;
+    justify-content: space-between;
+}
+
+ .about_img{
+    /* border: #FDAF1E solid 2px; */
+    margin-left: 50px;
+}
+
+.about_tex{
+    margin-left: 100px;
+    /* border: #FDAF1E solid 2px; */
+    height: 400px;
+}
+
+.about_tex >h2{
+    color: #ffa600;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.about_tex >h4{
+    color: #090909;
+    font-size: 18px;
+    margin-bottom: 55px;
+}
+
+.about_tex > p{
+    color: #fffefc;
+    margin-right: 150px;
+    margin-bottom: 40px;
+    line-height: 25px;
+}
+
+.about_tex > p >samp{
+    color: #FDAF1E;
+    font-weight: bold;
+   
+}
+
+.about_tex>button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    /* letter-spacing: 1px; */
+    margin: 10px 0;
+    background-color: #FDAF1E;
+    font-size: 16px;
+    font-weight: bold;
+    color: #012243;
+    cursor: pointer;
+    transition: 0.5s ease;
+   
+    
+}
+
+.about_tex >button:hover{
+   background-color: #ffa600;
+   box-shadow: 0 0 10px #ffffffeb;
+}
